@@ -1,0 +1,7 @@
+server:
+  port: 4001
+logging:
+  file:
+    path: ../logs
+
+scheduler.file: scheduler-dev.xml

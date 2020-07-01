@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有定时调度任务 -->
+<schedulers hasChildren="true">
+    <scheduler>
+        <!-- 定时推送消息 -->
+        <job-group>dailyJobGroup</job-group>
+        <job-name>testJob</job-name>
+        <trigger-group>testJobTriggerGroup</trigger-group>
+        <trigger-name>>testJobTrigger</trigger-name>
+        <!-- 每隔1秒执行一次 -->
+        <cron>0/1 * * * * ?</cron>
+        <!-- 调用接口信息 -->
+        <resource>
+            <name>定时推送消息</name>
+            <url>https://www.baidu.com/</url>
+            <method>GET</method>
+        </resource>
+    </scheduler>
+
+</schedulers>
